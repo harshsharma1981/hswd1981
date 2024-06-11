@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon index.js",
-    "build": "npx i"
+    "build": "npm i"
   },
   "keywords": [],
   "author": "",
