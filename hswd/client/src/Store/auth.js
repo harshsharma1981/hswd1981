@@ -9,7 +9,7 @@ const [mychatdetailData,setmychatdetailData]=useState({})
 const [isLoggedIn, setIsLoggedIn] = useState(!!token);
 const [email, setemail] = useState("");
 const [uName, setuName] = useState("");
-const curl="https://server1981.netlify.app/"
+const curl="https://hswd1981-1.onrender.com/"
 useEffect(()=>{
 
   const exptokenString = localStorage.getItem('exp');
