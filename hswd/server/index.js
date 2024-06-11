@@ -23,7 +23,7 @@ require("./routes/db/conn")
 // Middleware to parse JSON body
 app.use(bodyParser.json());
 // const option= cors({ origin: 'http://192.168.0.3:3000' })
-app.use(cors({ origin: 'https://hswd1981.netlify.app/' }))
+app.use(cors({ origin: 'https://hswd1981.netlify.app' }))
 // Route to handle signup POST requests
 app.use("/api/signup" , Signup)
 app.use("/api/diary" ,AuthControl, diary)
