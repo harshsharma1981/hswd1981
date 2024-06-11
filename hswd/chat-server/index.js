@@ -15,7 +15,7 @@ const { v4: uuidv4 } = require('uuid');
 // connection between server and client
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "https://hswd1981.netlify.app/"
+        origin: "https://hswd1981.netlify.app"
     }
     
 });
