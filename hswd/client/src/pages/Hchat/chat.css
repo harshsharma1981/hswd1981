@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.chat{
+height: 100vh;
+display: flex;
+background: #F1EAFF;
+}
+.chat__main{
+  width: 70%;
+}
+.btn:focus{
+  background: #000;
+color: rgb(244, 234, 234);
+}
+.btn:hover{
+background: #000;
+color: rgb(244, 234, 234);
+}
+.chat__sidebar{
+width: 30%;
+height: 100%;
+background: #354259;
+color: white;
+border-right: 1px solid white;
+}
+.chat__sidebar *{
+color: inherit;
+}
+.chat__footer{
+position: absolute;
+bottom: 0;
+width: 100%;
+}
+.message__sender{
+  
+  overflow-wrap: anywhere;
+}
+.message__recipient{
+  overflow-wrap: anywhere;
+
+}
+.message__container{
+overflow-x: hidden;
+overflow-y: auto;
+height: 71%;
+
+
+}
+
+.send-text-cont{
+background: #A5DD9B;
+
+}
+.receive-text-cont{
+background: #FFBE98;
+
+}
+.message__container *{
+color: inherit;
+
+
+}
+.sendBtn{
+background: transparent;
+border: none;
+padding-left: 1rem;
+
+}
+.sendBtn i{
+background: transparent;
+border: none;
+
+
+font-size: 2rem;
+}
+.myfriendlist-cont{
+height: 77%;
+}
+.list-group2{
+height: 82%;
+}
+.list-group2:last-child{
+margin-bottom: 0;
+}
+.chatting-cont{
+position: relative;
+background: transparent;
+}
+
+#online-user-list {
+  display: block;
+  height: 76%;
+ 
+  
+}
+#myfriend-user-list {
+
+  display: none;
+  height: 76%;
+}
+#request-user-list {
+  display: none;
+}
+
+/* here code for message animation */
+
+.welcome{
+display: flex;}
+
+.hover1 .row:hover{
+border: 2px solid black;
+background: #59ff0026; 
+color: white;
+cursor: pointer;
+}
+.ms-10{
+margin-left: 10rem;
+cursor: pointer;
+background: #cff2ac;
+color: rgb(48, 72, 3);
+border-radius: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 0.9rem;
+border: 1px solid black;
+}
+.ms-49{
+margin-left: 87%;
+cursor: pointer;
+
+border-radius: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 0.9rem;
+border: 1px solid black;
+}
+.ms-6{
+margin-left: 4.8rem;
+cursor: pointer;
+background: #cff2ac;
+color: rgb(48, 72, 3);
+border-radius: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 0.9rem;
+border: 1px solid black;
+}
+.add-friend-cont{
+height: 100vh;
+background-color: white;
+}
+/* responsive media query start here */
+
+@media screen and (max-width: 992px) {
+.chat__main{
+display: none;
+width: 100%;
+}
+.chat__sidebar{
+width: 100%;
+}
+}

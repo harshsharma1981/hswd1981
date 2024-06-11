@@ -1,0 +1,19 @@
+.nav-cont{
+background: #2C3639;
+color: #FCF8E8;
+}
+.nav-cont *{
+    color: inherit;
+
+}
+.mobile-theme{
+border: none;
+}
+.text-font{
+font-size: 0.8rem;
+}
+@media screen and (max-width: 992px) {
+ .fordesktop{
+ display: none;
+ }
+  }

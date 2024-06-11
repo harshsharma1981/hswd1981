@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: #000; */
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-login-cont{
+background: #4effaf38;
+}
+body{
+    background: rgb(33 37 41);
+    }
+.login-cont form label{
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont form button{
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    border: 1px solid rgba(0, 0, 0, 0.206);
+    color: white;
+    background: linear-gradient(to right,#0000ff40, rgb(241 56 229 / 27%));
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont form input{
+    
+    background: rgba(0, 0, 0, 0.083);
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont form textarea{
+    
+    background: rgba(0, 0, 0, 0.083);
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont form input:focus{
+    border: none;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.083);
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont form textarea:focus{
+    border: none;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.083);
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.login-cont{
+    
+    background: white;
+}
+.my-6{
+margin-top: 6rem;
+margin-bottom: 6rem;
+}
+@media screen and (max-width: 650px) {
+    .main-login-cont{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        }
+  }

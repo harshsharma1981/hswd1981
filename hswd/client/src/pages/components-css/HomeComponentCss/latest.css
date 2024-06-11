@@ -1,0 +1,38 @@
+#mycards{
+
+    background: black;
+    
+    flex-wrap: nowrap;
+}
+#mycards *{
+
+    background: inherit;
+ 
+}
+
+.latest-cont{
+display: flex;
+overflow-x: auto;
+  }
+.main-latest-cont{
+  background: #9290c32a;
+
+}
+#latestcont{
+background: none;
+color:#FCF8E8 ;
+}
+#latestcont *{
+
+color:inherit ;
+  }
+.mycard{
+flex: 0 0 auto;
+width: 18rem;
+margin-right: 10px;
+border: 1px solid white;
+}
+
+.mycard:last-child {
+    margin-right: 0;
+  }

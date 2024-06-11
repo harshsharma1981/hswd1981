@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+#about{
+color: rgb(255, 255, 255);
+}
+#about *{
+color: inherit;
+
+}
+#about p{
+font-size: large;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#about h2{
+font-size: x-large;
+font-weight: 900;
+
+}
+.about-cont{
+
+border-top:1px solid rgb(214, 213, 213);
+border-bottom:1px solid rgb(214, 213, 213);
+}
+.nav-cont{
+
+
+border-bottom:1px solid rgb(214, 213, 213);
+}
+.footer{
+border-top: 1px solid rgb(214, 213, 213);
+
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.main-footer-cont{
+background: #2C3639;
+color: #FCF8E8;
+}
+.main-footer-cont *{
+
+color: inherit;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

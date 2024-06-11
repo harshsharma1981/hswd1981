@@ -1,0 +1,73 @@
+.w-77{
+width: 76%;
+}
+.main-diary-section{
+height: 91vh;
+
+}
+.main-diary-section-text{
+height: 91vh;
+width: 75%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: larger;
+}
+#dscreen{
+display: none;
+}
+.sidebar{
+overflow:auto;
+background: white;
+width: 40%;
+}
+.text-editor:focus-visible{
+border: none;
+box-shadow: none;
+outline: none;
+}
+.title:focus{
+border: none;
+box-shadow: none;
+outline: none;
+}
+.title{
+border: none;
+box-shadow: none;
+outline: none;
+}
+.text-editor{
+border: none;
+}
+
+.add-button{
+width: 5%;
+display: flex;
+justify-content: center;
+}
+.h-86{
+height: 75%;
+}
+.title-list-name{
+    width: 50%;
+    overflow-wrap:break-word;
+  
+}
+@media (max-width: 768px) {
+    .sidebar{
+        width: 100%;
+        }
+    .main-diary-section-text{
+    
+    display: none;
+    }
+    #dscreen{
+    width: 100%;
+    }
+    #dscreen-text{
+    display: none;
+    }
+    .add-button{
+    width: 12%;
+    }
+  }

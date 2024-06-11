@@ -1,0 +1,21 @@
+.main-section-cont{
+    background: url("../../../../public/main-section-bg.jpeg");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: #B7C4CF; */
+  color: #FCF8E8;
+}
+
+.main-section-cont *{
+    color: inherit;
+}
+.welcome{
+background: #62626255;
+width:max-content;
+}
+.intro{
+display: flex;
+flex-direction: column;
+width: fit-content;
+}
