@@ -171,7 +171,7 @@ try {
     }
     socket.emit('newUserResponse', users);
     socketIO.emit('newUserResponse', users);
- 
+ console.log(users)
     //here sending stored messages to user connected
     let mystoredmessageOBJ = await MessageRegister.findOne({username:data.userName});
     if (mystoredmessageOBJ) {
