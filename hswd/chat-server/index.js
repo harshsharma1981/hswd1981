@@ -165,9 +165,9 @@ try {
  const socketCustom = socketIO.sockets.sockets.get(data.socketID);
   if (socketCustom) {
     socketCustom.disconnect(true);
-    console.log(`User with socket ID ${socketId} has been disconnected`);
+    console.log(`User with socket ID  has been disconnected`);
   } else {
-    console.log(`Socket ID ${socketId} not found`);
+    console.log(`Socket ID not found`);
   }
         users.push(data);
       
