@@ -162,10 +162,12 @@ try {
            if (users.some(el => el.userName === data.userName)) {
         users = users.filter((user) => user.socketID !== data.userName);
         activeuser = activeuser.filter((user) => user.socketID !== data.userName);
+               
         users.push(data);
       
      
         activeuser.push(data);
+               console.log("200 ok ok ok")
       }
       else{
       
