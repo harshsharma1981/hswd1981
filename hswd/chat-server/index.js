@@ -160,8 +160,8 @@ try {
     if (data.userName!="" && data.userName!=null){
       if(!users.some(el => el.socketID === data.socketID)){
            if (!!users.some(el => el.userName === data.userName)) {
-        users = users.filter((user) => user.socketID !== data.userName);
-        activeuser = activeuser.filter((user) => user.socketID !== data.userName);
+        users = users.filter((user) => user.userName !== data.userName);
+        activeuser = activeuser.filter((user) => user.userName !== data.userName);
  const socketCustom = socketIO.sockets.sockets.get(data.socketID);
   if (socketCustom) {
     socketCustom.disconnect(true);
