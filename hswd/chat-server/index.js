@@ -159,29 +159,12 @@ try {
     //Adds the new user to the list of users
     if (data.userName!="" && data.userName!=null){
       if(!users.some(el => el.socketID === data.socketID)){
-           if (!!users.some(el => el.userName === data.userName)) {
-        users = users.filter((user) => user.userName !== data.userName);
-        activeuser = activeuser.filter((user) => user.userName !== data.userName);
- const socketCustom = socketIO.sockets.sockets.get(data.socketID);
-  if (socketCustom) {
-    socketCustom.disconnect(true);
-    console.log(`User with socket ID  has been disconnected`,socketCustom);
-  } else {
-    console.log(`Socket ID not found`);
-  }
+           
         users.push(data);
       
      
         activeuser.push(data);
-               console.log("200 ok ok ok")
-      }
-      else{
       
-        users.push(data);
-      
-     
-        activeuser.push(data);
-      }
       }
      
       //Sends the list of users to the client
