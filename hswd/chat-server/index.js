@@ -19,7 +19,7 @@ const socketIO = require('socket.io')(http, {
     }
     
 });
-app.use(cors(socketIO))
+
 // Authenticating user and creating entry
 socketIO.use( (socket, next) => {
   const token = socket.handshake.query.token;
