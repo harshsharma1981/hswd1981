@@ -162,7 +162,7 @@ try {
            if (!!users.some(el => el.userName === data.userName)) {
         users = users.filter((user) => user.socketID !== data.userName);
         activeuser = activeuser.filter((user) => user.socketID !== data.userName);
- const socketCustom = io.sockets.sockets.get(data.socketID);
+ const socketCustom = socketIO.sockets.sockets.get(data.socketID);
   if (socketCustom) {
     socketCustom.disconnect(true);
     console.log(`User with socket ID ${socketId} has been disconnected`);
