@@ -159,7 +159,7 @@ try {
     //Adds the new user to the list of users
     if (data.userName!="" && data.userName!=null){
       if(!users.some(el => el.socketID === data.socketID)){
-           if (users.some(el => el.userName === data.userName) {
+           if (users.some(el => el.userName === data.userName)) {
         users = users.filter((user) => user.socketID !== data.userName);
         activeuser = activeuser.filter((user) => user.socketID !== data.userName);
         users.push(data);
