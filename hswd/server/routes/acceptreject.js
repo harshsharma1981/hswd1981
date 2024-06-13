@@ -25,9 +25,10 @@ try {
   
   
   if (req.body.status==="accept") {
+    
     async function addObjectToArrayInNestedArray(documentId,documentIdToUpdate2, newObjectToAdd,newObjectToAdd2) {
       try {
-      
+      console.log("accept|")
       const result = await ChatRegister.updateOne(
           { _id: documentId }, // Filter by the document's _id
           { $push: { friendlist: newObjectToAdd } 
@@ -72,6 +73,7 @@ if (!friendlist.includes(newObjectToAdd.friend) && !friendlist2.includes(newObje
   else if (req.body.status==="reject") {
     async function removeObjectToArrayInNestedArray(documentId, objectToDelete,documentIdToUpdate2,newObjectToAdd) {
       try {
+            console.log("reject|")
       const result = await ChatRegister.updateOne(
           { _id: documentId }, // Filter by the document's _id
           { $pull: { requestfriendlist: objectToDelete } }// Add the new object to the array field
