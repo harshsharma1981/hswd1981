@@ -153,7 +153,21 @@ try {
   
   }
   );
-
+  socket.on('stop typing', ({data}) => 
+ { console.log(data)
+ console.log(data.selectedUsername)
+  
+ activeuser.map((user)=>{
+  
+  if (user.userName===data.selectedUsername) {
+    
+    socketIO.to(user.socketID).emit('stop typingResponse', data);
+  }
+  
+  })
+  
+  }
+  );
   //Listens when a new user joins the server
   socket.on('newUser',async (data) => {
     //Adds the new user to the list of users
